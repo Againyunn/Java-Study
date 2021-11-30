@@ -24,6 +24,7 @@ public class ch2_Arithmetric {
         return num1 / num2;
     }
 
+
     public static void main(String[] args ) {
         //함수 사용 --> func 선언
         ch2_Arithmetric func = new ch2_Arithmetric();
