@@ -11,4 +11,12 @@ public class ch8_InstanceClassEx3 {
         zero(circle2.radius);
         System.out.println("Circle2의 Radius: " + circle2.radius);
     }
+
+    public static void zero(Circle c) {
+        c.radius = 0.0;
+    }
+
+    public static void zero(double r) {
+        r = 0.0;
+    }
 }
