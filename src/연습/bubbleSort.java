@@ -28,21 +28,23 @@ public class bubbleSort {
             System.out.print(arr[a]+" ");
         }
 
-       for(int j = 0; j < arr.length; j++){
-            for(int k = 0; k < arr.length - j - 1; k++){
-                if(arr[k] > arr[k+1]){
+       for(int j = 0; j < (arr.length -1); j++){
+           for(int k = (arr.length - 1); k > j ; k--){
+//            for(int k = 0; k < arr.length - j - 1; k++){
+               if(arr[k] < arr[k - 1]){
+//               if(arr[k] > arr[k+1]){
 
                     //중간 과정의 출력이 필요하다면
                     //1. 바꾸기 전
-                    System.out.println("바꾸기 전:"+arr[j]);
+                    System.out.println("["+k+"]바꾸기 전:"+arr[k]);
 
-                    int tmp = arr[k + 1];
-                    arr[k + 1] = arr[k];
+                    int tmp = arr[k - 1];
+                    arr[k - 1] = arr[k];
                     arr[k] = tmp;
 
                     //중간 과정의 출력이 필요하다면
                     //2. 비교해서 바꾼 후
-                    System.out.println("바꾼 후:"+arr[j]);
+                    System.out.println("["+k+"]바꾼 후:"+arr[k]);
                 }
             }
         }
